@@ -146,7 +146,7 @@ composer.addPass(renderPass);
 
 /* hue → +0.55 ≈ magenta / pink, sat → keep same (0 = unchanged) */
 const hueSatPass = new ShaderPass(HueSaturationShader);
-hueSatPass.uniforms.hue.value = 0.55; // 0-1, wrap-around
+hueSatPass.uniforms.hue.value = 0.69; // was 0.55
 hueSatPass.uniforms.saturation.value = 0.0; // could bump to 0.1-0.3 if you want more pop
 composer.addPass(hueSatPass);
 
