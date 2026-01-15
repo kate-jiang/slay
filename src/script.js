@@ -1,26 +1,15 @@
-/* -------------------------------------------------------------------------- */
-/* Imports                                                                     */
-/* -------------------------------------------------------------------------- */
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-
-/* post-processing */
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { HueSaturationShader } from "three/examples/jsm/shaders/HueSaturationShader.js";
 
-/* -------------------------------------------------------------------------- */
-/* Canvas & Scene                                                             */
-/* -------------------------------------------------------------------------- */
-const canvas = document.querySelector("canvas.webgl");
+const canvas = document.querySelector("canvas");
 const scene = new THREE.Scene();
 
-/* -------------------------------------------------------------------------- */
-/* Helpers                                                                    */
-/* -------------------------------------------------------------------------- */
 let donuts = [];
 let dusts = [];
 
